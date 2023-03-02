@@ -1,11 +1,22 @@
 # Aseprite ASCII Script
-An Aseprite script that converts a single sprite into ASCII.
+An Aseprite script that converts a sprite into ASCII.
 
-*Currently only works with 1 layer so you'll need to merge down before running the script.*
+**Currently this script only works with a single layer. In order to capture the entire sprite, you'll need to merge everything down into one layer before running the script.**
 
 ## How To
 
 Clone this repo and place `ASCII.lua` and the `_modules` directory into your Aseprite scripts folder.
+
+Next, run the script from within Aseprite via `File > Scripts > ASCII`:
+
+![Running the script gif](https://github.com/Joshalexjacobs/aseprite-ascii-script/blob/main/run-script.gif)
+
+Once finished, there are should be 2 additional files in the directory containing your `.ase` file.
+
+1. A `.json` file that contains color data for each corresponding letter. The more colors you have in your sprite, the more letters should appear here.
+
+
+_Note: there's currently an untested limit to how many colors a single sprite can support._
 
 ```
 {
@@ -23,6 +34,8 @@ Clone this repo and place `ASCII.lua` and the `_modules` directory into your Ase
    }
 }
 ```
+
+2. A `.text` file that contains the ASCII version of your sprite. Each letter displayed here corresponds with the above color key.
 
 ```
               AAAA              
