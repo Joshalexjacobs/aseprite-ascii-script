@@ -5,7 +5,7 @@ An Aseprite script that converts a sprite into ASCII.
 
 ## How To
 
-Clone this repo and place `ASCII.lua` and the `_modules` directory into your Aseprite scripts folder.
+Clone this repo and place `ASCII.lua` and the `_modules` directory into your Aseprite scripts folder (the script will fail if it can't find `json.lua` in the `_modules` folder).
 
 Next, run the script from within Aseprite via `File > Scripts > ASCII`:
 
