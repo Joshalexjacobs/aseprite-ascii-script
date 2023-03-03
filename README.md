@@ -35,7 +35,7 @@ _Note: there's currently an untested limit to how many colors a single sprite ca
 }
 ```
 
-2. A `.text` file that contains the ASCII version of your sprite. Each letter displayed here corresponds with the above color key.
+2. A `.txt` file that contains the ASCII version of your sprite. Each letter displayed here corresponds with the above color key.
 
 ```
               AAAA              
